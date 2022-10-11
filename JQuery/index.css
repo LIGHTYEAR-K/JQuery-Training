@@ -1,0 +1,25 @@
+html {
+    background-color:#2192FF;
+}
+.heading {
+    text-align: center;
+    padding:50px;
+    border: 1px solid black;
+    border-radius: 50px;
+    background-image: url(./boat.jpg);
+}
+ul {
+    font-style: italic;
+    font-size:larger;
+    list-style: none;
+    padding:20px;
+    line-height: 30px;
+}
+.textview{
+    font-size:20px;
+     color: red;
+}
+a{
+    text-decoration: none;
+    color:maroon;
+}
