@@ -1,0 +1,53 @@
+html {
+    background-color:#2192FF;
+}
+.heading {
+    text-align: center;
+    padding:50px;
+    border: 1px solid black;
+    border-radius: 50px;
+}
+ul {
+    font-style: italic;
+    font-size:larger;
+    list-style: none;
+    padding:20px;
+    line-height: 30px;
+}
+
+a{
+    text-decoration: none;
+    color:lime;
+}
+.auto {
+    width:100px;
+    height:100px;
+    background-color: rgb(190, 135, 135);
+    margin:auto;
+    text-align:center;
+}
+p {
+    color:darkorange
+}
+.data {
+    width:auto;
+    text-align: center;
+    margin:30px;
+
+}
+.qwerty {
+    background-color:red;
+    width:100px;
+    height:100px;
+    position:relative;
+    text-decoration:underline;
+}
+.btn1 {
+    position: relative;
+}
+#jio {
+    text-align: center;
+}
+.paras{
+    position: relative;
+}
