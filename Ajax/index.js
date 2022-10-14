@@ -17,56 +17,56 @@ $(document).ready(()=>{
 
         // ------------------Ajax ajax() Get method-----------------------------
 
-        // $(document).ready(()=>{
-        //     $.ajax({
-        //         "method":"GET",
-        //         "url":"https://jsonplaceholder.typicode.com/posts",
-        //         "dataType":"json"
-        //     }).done((data)=>{
-        //         $.each(data,(i,datas)=>{
-        //             $("tbody").append("<tr><td>"+ datas.id+"</td><td>"+datas.title+"</td><td>"+datas.body+"</td></tr>")
-        //         })
-        //     })
-        // })
+        $(document).ready(()=>{
+            $.ajax({
+                "method":"GET",
+                "url":"https://jsonplaceholder.typicode.com/posts",
+                "dataType":"json"
+            }).done((data)=>{
+                $.each(data,(i,datas)=>{
+                    $("tbody").append("<tr><td>"+ datas.id+"</td><td>"+datas.title+"</td><td>"+datas.body+"</td></tr>")
+                })
+            })
+        })
 
 
             // --------------Ajax() Post Method---------------------
 
-            // $(".sub").click(()=>{
-            //     let files={
-            //           content:$("input").val()
-            //     };
+            $(".sub").click(()=>{
+                let files={
+                      content:$("input").val()
+                };
    
-        //     $.ajax({
-        //         "method":"POST",
-        //         "url":"https://jsonplaceholder.typicode.com/posts",
-        //         "data":files,
-        //         "success":(data)=>{
-        //             $("ol").append("<li>" + data.content+"</li>");
-        //         },
-        //         "error":()=>{
-        //             alert("ERROR");
-        //         }
-        //     })
-        // })
-        // })
+            $.ajax({
+                "method":"POST",
+                "url":"https://jsonplaceholder.typicode.com/posts",
+                "data":files,
+                "success":(data)=>{
+                    $("ol").append("<li>" + data.content+"</li>");
+                },
+                "error":()=>{
+                    alert("ERROR");
+                }
+            })
+        })
+        })
 
 
                                         // Ajax getScript() Method
-// $(".sub").click(()=>{
-//      $.getScript("ajax.js",()=>{
-//         console.log(" it was Sucessfully imported")
-//      })
-// })
+$(".sub").click(()=>{
+     $.getScript("ajax.js",()=>{
+        console.log(" it was Sucessfully imported")
+     })
+})
 
 
                                         // Ajax get() Method
-//  $(".sub").click(()=>{
-//       $.get('emty.json',(data,status)=>{
-//          console.log("Name:: "+data.title+"\nhis life:: "+data.status +"\nstatus:: "+status)
+ $(".sub").click(()=>{
+      $.get('emty.json',(data,status)=>{
+         console.log("Name:: "+data.title+"\nhis life:: "+data.status +"\nstatus:: "+status)
 
-//       })
-//     })
+      })
+    })
 
                                         // Ajax post() Method
                                         //??Failed to load resource: the server responded with a status of 405 (Method Not Allowed)
@@ -81,13 +81,13 @@ $(document).ready(()=>{
         })
       })
 
-// $(document).ready(()=>{
-//     $(".inputss").load("section.html",()=>{
-//         console.log("external html is Executed")
-//     })
-// })
+$(document).ready(()=>{
+    $(".inputss").load("section.html",()=>{
+        console.log("external html is Executed")
+    })
+})
 
-//---------validate------
+//--------- form-validate------
 
 
 
