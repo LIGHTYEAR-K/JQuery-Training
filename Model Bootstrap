@@ -1,0 +1,64 @@
+               <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary"id="btn"data-target="#exampleModal">
+    Add New Empolyee
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal " id="goal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Create New Employee</h5>
+          <button type="button" id="close" class="close"  aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form action="/login" method="POST">
+            <input type='text'placeholder="Name">
+            <br>
+            <br>
+            <input type='text'placeholder="RollNo">
+            <br>
+            <br>
+            <input type='text'placeholder="WorkDept">
+            <br>
+            <br>
+            <input type='text'placeholder="EmailId">
+            <br>
+            <br>
+            <input type='text'placeholder="City">
+            <br>
+            <br>
+            <a href="www.google.com"><button>Add</button></a>
+           </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary close" >Close</button>
+          <!-- <button type="button" class="btn btn-primary">Add</button> -->
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  
+---------------- Script
+     $("#btn").on('click',(()=>{
+            $("#goal").modal('show')
+        }));
+        $(".close").on("click",(()=>{
+            $("#goal").modal("hide")
+        }))
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
